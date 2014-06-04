@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget
+    xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.jmarqz.directorio-asd"    
+    version     = "1.0.0" 
+    versionCode = "1" >
+
+    
+    <!-- Plataforms -->
+    <gap:platform name="ios" />
+	<gap:platform name="android" />
+
+	
+    <!-- Plugins -->
+
+    
+    <!-- Preferences -->
+    <preference name="phonegap-version"         value="3.3.0" />
+    <preference name="orientation"              value="portrait" />
+    <preference name="prerendered-icon"         value="true" />
+
+
+    <!-- Permissions -->
+
+
+    <!-- Splash Screens -->
+
+
+    <!-- App Info -->
+    <name>Directorio ASD</name>
+    <description>
+    	Directorio de las instituciones adventistas de México.
+    </description>
+    <author href="https://jmarqz.com" email="jmarqz04@gmail.com">
+        JMarqz
+    </author>
+
+</widget>
