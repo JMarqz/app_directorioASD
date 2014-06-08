@@ -10,8 +10,11 @@
 	<link rel="stylesheet" type="text/css" href="../../includes/css/jquery.mobile.icons.min.css">
 
 	<!-- JS -->
-	<script type="text/javascript" src="../../includes/js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="../../includes/js/jquery.mobile-1.4.2.min.js"></script>
+	<!-- Phonegap + phonegap plugins -->
+	<script src="../../phonegap.js"></script>
+	<script src="../../includes/js/jquery-1.11.0.min.js"></script>
+	<script src="../../includes/js/jquery.mobile-1.4.2.min.js"></script>
+	<script src="../../includes/js/functions.js"></script>
 </head>
 
 <body>
@@ -60,7 +63,11 @@
 			<table>
 				<tr>
 					<td class="td-left"><img src="../../includes/iconos/link.png"></td>
-					<td><a href="http://www.ulv.edu.mx/" target="_blank">ulv.edu.mx</a></td>
+					<td>
+						<a href="#" onClick="abrirURL('http://www.ulv.edu.mx');">ulv.edu.mx</a>
+						<a href="#" onClick="window.open('http://www.ulv.edu.mx', '_system');"></a>
+					</td>
+
 				</tr>
 			</table>
 			<hr class="separador">
