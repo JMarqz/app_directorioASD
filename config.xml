@@ -7,6 +7,16 @@
     version     = "1.0.0" 
     versionCode = "1" >
 
+
+    <!-- App Info -->
+    <name>Directorio ASD</name>
+    <description>
+        Directorio de las instituciones adventistas de México.
+    </description>
+    <author href="https://jmarqz.com" email="jmarqz04@gmail.com">
+        JMarqz
+    </author>
+
     
     <!-- Plataforms -->
     <gap:platform name="ios" />
@@ -15,27 +25,33 @@
 	
     <!-- Plugins -->
     <gap:plugin name="org.apache.cordova.inappbrowser"      version="0.3.3" />
-    
+    <gap:plugin name="com.phonegap.plugin.statusbar"        version="1.1.0" />
+
     
     <!-- Preferences -->
     <preference name="phonegap-version"         value="3.3.0" />
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
 
 
-    <!-- Permissions -->
-
+    <!-- Icon -->
+    <icon src="icon.png" />
+    
 
     <!-- Splash Screens -->
+    <!-- Android -->
+    <gap:splash src="screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+    <!-- iOS -->
+    <gap:splash src="screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="screen/ios/screen-ipad-portrait-2x.png"        gap:platform="ios"     width="1536" height="2008" />
 
-
-    <!-- App Info -->
-    <name>Directorio ASD</name>
-    <description>
-    	Directorio de las instituciones adventistas de México.
-    </description>
-    <author href="https://jmarqz.com" email="jmarqz04@gmail.com">
-        JMarqz
-    </author>
+    
 
 </widget>
