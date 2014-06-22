@@ -41,10 +41,10 @@
 
     <!-- Splash Screens -->
     <!-- Android -->
-    <gap:splash src="screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
-    <gap:splash src="screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
-    <gap:splash src="screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
-    <gap:splash src="screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+    <gap:splash src="screen/android/screen-port-ldpi.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="screen/android/screen-port-mdpi.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="screen/android/screen-port-hdpi.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="screen/android/screen-port-xhdpi.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <!-- iOS -->
     <gap:splash src="screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
     <gap:splash src="screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
