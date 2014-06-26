@@ -9,7 +9,7 @@ function abrirURL(url) {
 }
 
 //Abrir Twitter
-function abrirTwitter(){
+function abrirTwitter(userName){
 	document.addEventListener("deviceready", onDeviceReady, false);
 
     function onDeviceReady() {
