@@ -23,14 +23,14 @@ function abrirTwitter(userName){
             twitter = "twitter://";
         };
 
-        //Checar Twitter v0.2.1
-        appAvailability.check(twitter, function(availability) {
-            // availability is either true or false
-            if(availability) {
-                window.open("twitter://user?screen_name="+userName);
-            } else{
-                window.open("http://www.twitter.com/"+userName, "_system");
-            }
+        // AppAvailability v0.3.0
+        appAvailability.check(
+        twitter, // URI Scheme
+        function() {  // Success callback
+            window.open("twitter://user?screen_name="+userName);
+        },
+        function() {  // Error callback
+            window.open("http://www.twitter.com/"+userName, "_system");
         });
-    }  
+    }
 }
