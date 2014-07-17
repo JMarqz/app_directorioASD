@@ -1,3 +1,7 @@
+document.addEventListener('deviceready', onDeviceReady, false); // Esperar a que Cordova cargue.
+setTimeout(function() {
+    navigator.splashscreen.hide();
+}, 5000);
 
 //Abrir URL en navegador nativo
 function abrirURL(url) {

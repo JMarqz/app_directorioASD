@@ -7,7 +7,7 @@
     version     = "0.1.0" 
     versionCode = "1" >
 
-
+    
     <!-- App Info -->
     <name>Directorio Adventista</name>
     <description>
@@ -36,7 +36,7 @@
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
 
-
+    
     <!-- Icon -->
     <icon src="icon.png" />
     
