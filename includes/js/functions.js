@@ -1,28 +1,28 @@
 // SplashScreen Delay
-function onDeviceReady() {    
-    document.addEventListener('deviceready', function() {
-        setTimeout(function() {
-            navigator.splashscreen.hide();
-        }, 10000);
-    });
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+    setTimeout(function() {
+        navigator.splashscreen.hide();
+    }, 10000);
 }
 
 
 //Abrir URL en navegador nativo
 function abrirURL(url) {
-    document.addEventListener('deviceready', onDeviceReady, false); // Esperar a que Cordova cargue.
+    //document.addEventListener('deviceready', onDeviceReady, false); // Esperar a que Cordova cargue.
     
-    function onDeviceReady() {
+    //function onDeviceReady() {
         var ref = window.open(encodeURI(url), '_system');
-    }
+    //}
 }
 
 
 //Abrir Twitter
 function abrirTwitter(userName){
-	document.addEventListener("deviceready", onDeviceReady, false);
+	//document.addEventListener("deviceready", onDeviceReady, false);
 
-    function onDeviceReady() {
+    //function onDeviceReady() {
         var plataforma = device.platform;
         var twitter;
 
@@ -42,5 +42,5 @@ function abrirTwitter(userName){
         function() {  // Error callback
             window.open("http://www.twitter.com/"+userName, "_system");
         });
-    }
+    //}
 }

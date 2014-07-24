@@ -35,7 +35,8 @@
     <preference name="phonegap-version"         value="3.4.0" />
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
-    <preference name="AutoHideSplashScreen"     value="false" />    
+    <preference name="AutoHideSplashScreen"     value="false" />
+    <preference name="splashscreen"             value="screen" />
 
     
     <!-- Icon -->
