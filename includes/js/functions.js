@@ -1,8 +1,10 @@
 // SplashScreen Delay
-function onDeviceReady() {
-    setTimeout(function() {
-        navigator.splashscreen.hide();
-    }, 10000);
+function onDeviceReady() {    
+    document.addEventListener('deviceready', function() {
+        setTimeout(function() {
+            navigator.splashscreen.hide();
+        }, 10000);
+    });
 }
 
 
