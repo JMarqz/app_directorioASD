@@ -1,7 +1,10 @@
-document.addEventListener('deviceready', onDeviceReady, false); // Esperar a que Cordova cargue.
-setTimeout(function() {
-    navigator.splashscreen.hide();
-}, 5000);
+// SplashScreen Delay
+function onDeviceReady() {
+    setTimeout(function() {
+        navigator.splashscreen.hide();
+    }, 10000);
+}
+
 
 //Abrir URL en navegador nativo
 function abrirURL(url) {
@@ -11,6 +14,7 @@ function abrirURL(url) {
         var ref = window.open(encodeURI(url), '_system');
     }
 }
+
 
 //Abrir Twitter
 function abrirTwitter(userName){
