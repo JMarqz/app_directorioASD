@@ -36,7 +36,17 @@
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
     <preference name="AutoHideSplashScreen"     value="false" />
-    <preference name="splashscreen"             value="screen" />
+    
+
+    <!-- Permissions -->
+    <feature name="InAppBrowser">
+        <param name="android-package"   value="org.apache.cordova.inappbrowser.InAppBrowser" />
+        <param name="ios-package"       value="CDVInAppBrowser" />
+    </feature>
+
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
 
     
     <!-- Icon -->
