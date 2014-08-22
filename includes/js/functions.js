@@ -30,7 +30,11 @@ function abrirTwitter(userName){
     appAvailability.check(
     twitter, // URI Scheme
     function() {  // Success callback
-        window.open("twitter://user?screen_name="+userName);
+        if (plataforma == "Android") {
+            window.open("http://www.twitter.com/"+userName, "_system");
+        } else{
+            window.open("twitter://user?screen_name="+userName);
+        }
     },
     function() {  // Error callback
         window.open("http://www.twitter.com/"+userName, "_system");
