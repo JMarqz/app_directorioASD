@@ -5,7 +5,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.jmarqz.directorio-adventista"    
     version     = "0.1.0" 
-    versionCode = "1" >
+    versionCode = "010" >
 
     
     <!-- App Info -->
@@ -16,7 +16,10 @@
     <author href="https://jmarqz.com" email="jmarqz04@gmail.com">
         JMarqz
     </author>
-
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+        <string>010</string>
+    </gap:config-file>
+    
     
     <!-- Plataforms -->
     <gap:platform name="ios" />
