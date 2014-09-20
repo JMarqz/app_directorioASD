@@ -4,26 +4,10 @@
 	font-weight: normal!important;
 }
 
-/* ESTILO DEL BOTÓN PARA AGREGAR A CONTACTOS */
-.agregar_contactos:hover {
-	background-color: #e7d7c7!important;
-	border-color: #e7d7c7!important;
-	text-shadow: 0 #e7d7c7!important;
-}
-
-/*
-.agregar_contactos {
-	background-color: #DBDBDB!important;
-	border-color: #DBDBDB!important;
-	text-shadow: 0 0px 0 #DBDBDB!important;
-}
-*/
-
 /* ANCHO MÍNIMO PARA LA TABLA DE LOS ÍCONOS */
 .td-left {
 	min-width: 40px;
 }
-
 
 /* LISTDIVIDERS */
 .ui-listview > .ui-li-divider {
@@ -69,6 +53,11 @@
 .ui-nodisc-icon {
 	background: none!important;
 	border: none!important;
+}
+
+/* ELIMINAR EL ILUMINADO POR DEFAULT (HOVER) */
+.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
+	background-color: transparent!important;
 }
 
 /* ELIMINAR EL ICONO DE LAS LISTAS */
