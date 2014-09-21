@@ -1,3 +1,8 @@
+/* PREVENIR QUE SE ABRA EL CUADRO DE DIÁOLO DE COPIAR/ABRIR */
+body {
+	-webkit-touch-callout: none;	/* disable callout, image save panel */
+    -webkit-user-select: none;		/* Disable selection/copy in UIWebView */
+}
 
 /* ESTILO DE LETRA NORMAL PARA LAS LISTAS Y EL BODY */
 .ui-page-theme-a a, body{
@@ -19,6 +24,11 @@
 
 .ui-page-theme-a .ui-bar-inherit {
 	text-shadow: 0 0px 0 #000!important;
+}
+
+/* ELIMINAR EL ILUMINADO POR DEFAULT (HOVER) */
+.ui-page-theme-a .ui-btn:hover{
+	background-color: transparent!important;
 }
 
 /* LÍNEA DE SEPARACIÓN */
@@ -53,11 +63,6 @@
 .ui-nodisc-icon {
 	background: none!important;
 	border: none!important;
-}
-
-/* ELIMINAR EL ILUMINADO POR DEFAULT (HOVER) */
-.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a:hover{
-	background-color: transparent!important;
 }
 
 /* ELIMINAR EL ICONO DE LAS LISTAS */
