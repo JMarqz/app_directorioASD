@@ -1,5 +1,5 @@
 /* PREVENIR QUE SE ABRA EL CUADRO DE DIÁOLO DE COPIAR/ABRIR */
-body {
+a {
 	-webkit-touch-callout: none;	/* disable callout, image save panel */
     -webkit-user-select: none;		/* Disable selection/copy in UIWebView */
 }
