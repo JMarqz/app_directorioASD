@@ -10,6 +10,12 @@ function onDeviceReady() {
 }
 
 
+/* CONFIGURACIONES GLOBALES DE JQUERY MOBILE */
+$( document ).on( "mobileinit", function() {
+    $.mobile.defaultPageTransition = 'none';
+});
+
+
 //Abrir URL en navegador nativo
 function abrirURL(url) {
     var ref = window.open(encodeURI(url), '_system');
