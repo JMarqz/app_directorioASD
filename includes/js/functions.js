@@ -16,13 +16,25 @@ $( document ).on( "mobileinit", function() {
 });
 
 
-//Abrir URL en navegador nativo
+// Enviar correos
+function enviarCorreo(correo, subject){
+    var asunto = "";
+    if (subject != null) { asunto = subject };
+
+    window.plugin.email.open({
+        to: [correo],
+        subject: asunto
+    });
+}
+
+
+// Abrir URL en navegador nativo
 function abrirURL(url) {
     var ref = window.open(encodeURI(url), '_system');
 }
 
 
-//Abrir Twitter
+// Abrir Twitter
 function abrirTwitter(userName){
     var plataforma = device.platform;
     var twitter;
