@@ -26,6 +26,10 @@ a {
 	text-shadow: 0 0px 0 #000!important;
 }
 
+.ui-btn:hover{
+	background-color: transparent!important;
+}
+
 /* ELIMINAR EL ILUMINADO POR DEFAULT (HOVER) */
 .ui-page-theme-a .ui-btn:hover{
 	background-color: transparent!important;

@@ -1,9 +1,9 @@
 /*!
-* jQuery Mobile 1.4.2
-* Git HEAD hash: 9d9a42a27d0c693e8b5569c3a10d771916af5045 <> Date: Fri Feb 28 2014 17:32:01 UTC
+* jQuery Mobile 1.4.3
+* Git HEAD hash: b9c6473e3d90af26570e6f14e5a0307897ab385c <> Date: Tue Jul 1 2014 15:37:36 UTC
 * http://jquerymobile.com
 *
-* Copyright 2010, 2014 jQuery Foundation, Inc. and other contributors
+* Copyright 2010, 2014 jQuery Foundation, Inc. and othercontributors
 * Released under the MIT license.
 * http://jquery.org/license
 *
@@ -77,7 +77,7 @@ label.ui-btn {
 	border-width: 1px;
 	border-style: solid;
 }
-.ui-btn:link {
+.ui-btn {
 	text-decoration: none !important;
 }
 .ui-btn-active {
@@ -160,7 +160,7 @@ html .ui-alt-icon.ui-radio-off:after,
 html .ui-alt-icon .ui-checkbox-off:after,
 html .ui-alt-icon .ui-radio-off:after {
 	background-color: #666666 /*{global-icon-color}*/;
-	background-color: 					rgba(0,0,0,.15);
+	background-color: transparent /*{global-icon-disc}*/;
 }
 /* No disc */
 .ui-nodisc-icon.ui-btn:after,
@@ -193,6 +193,10 @@ html .ui-alt-icon .ui-radio-off:after {
 .ui-btn.ui-checkbox-on:after {
 	-webkit-border-radius: .1875em;
 	border-radius: .1875em;
+}
+.ui-btn.ui-checkbox-off:after {
+	background-color: #666;
+	background-color: rgba(0,0,0,.3);
 }
 .ui-radio .ui-btn.ui-radio-on:after {
 	background-image: none;
@@ -237,7 +241,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 	background-color: #f6f6f6 /*{a-page-background-color}*/;
 	border-color: #bbbbbb /*{a-page-border}*/;
 	color: #000 /*{a-page-color}*/;
-	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #f3f3f3 /*{a-page-shadow-color}*/;
+	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #f6f6f6 /*{a-page-shadow-color}*/;
 }
 /* Body: Read-only lists, text inputs, collapsible content */
 .ui-body-a,
@@ -249,7 +253,7 @@ html .ui-panel-page-container-a {
 	background-color: #ffffff /*{a-body-background-color}*/;
 	border-color: #dddddd /*{a-body-border}*/;
 	color: #333333 /*{a-body-color}*/;
-	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #fff /*{a-body-shadow-color}*/;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #ffffff /*{a-body-shadow-color}*/;
 }
 .ui-body-a {
 	border-width: 1px;
@@ -304,10 +308,10 @@ html .ui-bar-a .ui-btn:hover,
 html .ui-body-a .ui-btn:hover,
 html body .ui-group-theme-a .ui-btn:hover,
 html head + body .ui-btn.ui-btn-a:hover {
-	background-color: #e7d7c7 /*{a-bhover-background-color}*/;
+	background-color: #f6f6f6 /*{a-bhover-background-color}*/;
 	border-color: #dddddd /*{a-bhover-border}*/;
 	color: #333333 /*{a-bhover-color}*/;
-	text-shadow: 0 /*{a-bhover-shadow-x}*/ 0px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #e7d7c7 /*{a-bhover-shadow-color}*/;
+	text-shadow: 0 /*{a-bhover-shadow-x}*/ 0px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #f6f6f6 /*{a-bhover-shadow-color}*/;
 }
 /* Button down */
 .ui-page-theme-a .ui-btn:active,
@@ -507,7 +511,7 @@ html .ui-body-b .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-b .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-b .ui-btn-active {
 	background-color: #3388cc /*{b-active-background-color}*/;
-	border-color: #3388cc /*{b-active-border}*/;
+	border-color: #1c4a70 /*{b-active-border}*/;
 	color: #ffffff /*{b-active-color}*/;
 	text-shadow: 0 /*{b-active-shadow-x}*/ 1px /*{b-active-shadow-y}*/ 0 /*{b-active-shadow-radius}*/ #005599 /*{b-active-shadow-color}*/;
 }
@@ -671,7 +675,7 @@ html .ui-body-c .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-c .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-c .ui-btn-active {
 	background-color: #3388cc /*{c-active-background-color}*/;
-	border-color: #3388cc /*{c-active-border}*/;
+	border-color: #1c4a70 /*{c-active-border}*/;
 	color: #ffffff /*{c-active-color}*/;
 	text-shadow: 0 /*{c-active-shadow-x}*/ 1px /*{c-active-shadow-y}*/ 0 /*{c-active-shadow-radius}*/ #005599 /*{c-active-shadow-color}*/;
 }
@@ -740,4 +744,3 @@ button[disabled],
 	outline-width: 1px;
 	outline-style: auto;
 }
-			
