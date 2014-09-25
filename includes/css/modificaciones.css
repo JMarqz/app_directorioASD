@@ -28,6 +28,7 @@ a {
 
 .ui-listview .ui-btn:active, .ui-listview .ui-btn:hover {
 	background-color: transparent!important;
+	border-color: #dddddd!important;
 }
 
 /* LÍNEA DE SEPARACIÓN */
