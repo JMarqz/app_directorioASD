@@ -14,24 +14,19 @@ a {
 	min-width: 40px;
 }
 
+/* QUITAR SOMBRAS */
+.ui-shadow{
+	box-shadow: none!important;
+}
+
 /* LISTDIVIDERS */
 .ui-listview > .ui-li-divider {
+	border-color: transparent!important;
 	background-color: #D8CBBE!important;
-	border-color: #CFBCA8!important;
-	border-bottom-width: 2px!important;
-	border-top-width: 2px!important;
+	text-shadow: none!important;
 }
 
-.ui-page-theme-a .ui-bar-inherit {
-	text-shadow: 0 0px 0 #000!important;
-}
-
-.ui-btn:hover{
-	background-color: transparent!important;
-}
-
-/* ELIMINAR EL ILUMINADO POR DEFAULT (HOVER) */
-.ui-page-theme-a .ui-btn:hover{
+.ui-listview .ui-btn:active, .ui-listview .ui-btn:hover {
 	background-color: transparent!important;
 }
 
