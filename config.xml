@@ -3,13 +3,13 @@
 <widget
     xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.jmarqz.directorio-asd-test"    
-    version     = "0.1.1" 
+    id          = "com.jmarqz.directorio-adventista"
+    version     = "0.1.1"
     versionCode = "011" >
 
     
     <!-- App Info -->
-    <name>Directorio v011</name>
+    <name>Directorio Adventista</name>
     <description>
         Directorio de las instituciones adventistas de México.
     </description>
@@ -30,9 +30,9 @@
     <gap:plugin name="org.apache.cordova.device"                    version="0.2.8" />
     <gap:plugin name="org.apache.cordova.splashscreen"              version="0.2.7" />
     <gap:plugin name="org.apache.cordova.inappbrowser"              version="0.3.3" />
-    <gap:plugin name="de.appplant.cordova.plugin.email-composer"    version="0.8.1" />
     <gap:plugin name="com.phonegap.plugin.statusbar"                version="1.1.0" />
     <gap:plugin name="com.ohh2ahh.plugins.appavailability"          version="0.3.0" />
+    <gap:plugin name="de.appplant.cordova.plugin.email-composer"    version="0.8.1" />
 
     
     <!-- Preferences -->
@@ -69,7 +69,7 @@
     <icon src="icons/ios/icon-72@2x.png"    gap:platform="ios" width="144"  height="144"/>
     <icon src="icons/ios/icon-60.png"       gap:platform="ios" width="60"   height="60" />
     <icon src="icons/ios/icon-60@2x.png"    gap:platform="ios" width="120"  height="120"/>
-    <!--<icon src="icons/ios/icon-60@3x.png"    gap:platform="ios" width="180"  height="180"/>-->
+    <icon src="icons/ios/icon-60@3x.png"    gap:platform="ios" width="180"  height="180"/>
     <icon src="icons/ios/icon-76.png"       gap:platform="ios" width="76"   height="76" />
     <icon src="icons/ios/icon-76@2x.png"    gap:platform="ios" width="152"  height="152"/>
     <!-- Setting and Spotlight -->
@@ -84,16 +84,18 @@
     <!-- Splash Screens -->
     <gap:splash src="screen/default.png" />
     <!-- Android -->
-    <gap:splash src="screen/android/screen-ldpi-port.png"       gap:platform="android" gap:qualifier="ldpi" />
-    <gap:splash src="screen/android/screen-mdpi-port.png"       gap:platform="android" gap:qualifier="mdpi" />
-    <gap:splash src="screen/android/screen-hdpi-port.png"       gap:platform="android" gap:qualifier="hdpi" />
-    <gap:splash src="screen/android/screen-xhdpi-port.png"      gap:platform="android" gap:qualifier="xhdpi"/>
+    <gap:splash src="screen/android/screen-ldpi-port.png"           gap:platform="android" gap:qualifier="ldpi" />
+    <gap:splash src="screen/android/screen-mdpi-port.png"           gap:platform="android" gap:qualifier="mdpi" />
+    <gap:splash src="screen/android/screen-hdpi-port.png"           gap:platform="android" gap:qualifier="hdpi" />
+    <gap:splash src="screen/android/screen-xhdpi-port.png"          gap:platform="android" gap:qualifier="xhdpi"/>
     <!-- iOS -->
     <gap:splash src="screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480"  />
     <gap:splash src="screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960"  />
     <gap:splash src="screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
     <gap:splash src="screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="screen/ios/screen-ipad-portrait-2x.png"        gap:platform="ios"     width="1536" height="2008"/>
-    
+    <!-- Launch Images -->
+    <gap:splash src="screen/ios/launch-iphone6.png"                 gap:platform="ios"     width="750" height="1334"/>
+    <gap:splash src="screen/ios/launch-iphone6+.png"                gap:platform="ios"     width="1242" height="2208"/>
 
 </widget>
