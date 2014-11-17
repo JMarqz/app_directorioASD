@@ -5,7 +5,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.jmarqz.directorio-adventista"
     version     = "0.1.1"
-    versionCode = "011" >
+    versionCode = "0.1.1" >
 
     
     <!-- App Info -->
@@ -41,6 +41,8 @@
     <preference name="prerendered-icon"         value="true" />
     <preference name="DisallowOverscroll"       value="true"/>
     <preference name="AutoHideSplashScreen"     value="false" />
+    <preference name="android-minSdkVersion"    value="7" />
+    <preference name="android-targetSdkVersion" value="11" />
     
 
     <!-- Permissions -->
