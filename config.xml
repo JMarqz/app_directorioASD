@@ -3,7 +3,7 @@
 <widget
     xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.jmarqz.directorio-adventista-TEST"
+    id          = "com.jmarqz.directorio-adventista"
     version     = "0.1.2"
     versionCode = "012" >
 
