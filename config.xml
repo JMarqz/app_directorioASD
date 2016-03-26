@@ -89,6 +89,8 @@
     <gap:splash src="screen/android/screen-mdpi-port.png"           gap:platform="android" gap:qualifier="mdpi" />
     <gap:splash src="screen/android/screen-hdpi-port.png"           gap:platform="android" gap:qualifier="hdpi" />
     <gap:splash src="screen/android/screen-xhdpi-port.png"          gap:platform="android" gap:qualifier="xhdpi"/>
+    <gap:splash src="screen/android/screen-xxhdpi-port.png"         gap:platform="android" gap:qualifier="xxhdpi"/>
+    <gap:splash src="screen/android/screen-xxxhdpi-port.png"        gap:platform="android" gap:qualifier="xxxhdpi"/>
     <!-- iOS -->
     <gap:splash src="screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480"  />
     <gap:splash src="screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960"  />
