@@ -34,7 +34,7 @@
     <plugin name="com.ohh2ahh.plugins.appavailability" spec="0.3.1" source="pgb" />
     <plugin name="de.appplant.cordova.plugin.email-composer" spec="0.8.2" source="pgb" />
     
-    
+
     <!-- Preferences -->
     <preference name="phonegap-version"         value="cli-5.2.0" />
     <preference name="orientation"              value="portrait" />
@@ -43,6 +43,16 @@
     <preference name="AutoHideSplashScreen"     value="false" />
     <preference name="android-minSdkVersion"    value="7" />
     <preference name="android-targetSdkVersion" value="11" />
+
+    <!-- Permissions -->
+    <feature name="InAppBrowser">
+        <param name="android-package"   value="org.apache.cordova.inappbrowser.InAppBrowser" />
+        <param name="ios-package"       value="CDVInAppBrowser" />
+    </feature>
+
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
     
 
     <!-- Icons -->
