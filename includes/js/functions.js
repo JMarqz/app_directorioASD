@@ -5,6 +5,7 @@ function onDeviceReady() {
     setTimeout(function() {
         navigator.splashscreen.hide();
     }, 2000);
+    // StatusBar.overlaysWebView(false);
     StatusBar.backgroundColorByHexString("#c69c6d");
     StatusBar.styleDefault();
 }
